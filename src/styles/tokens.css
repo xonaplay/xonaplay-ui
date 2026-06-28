@@ -1,0 +1,124 @@
+/**
+ * @xonaplay/ui — Tokens de marca (fuente única de verdad).
+ * Importado por la web y el dashboard: import "@xonaplay/ui/styles.css"
+ * Solo define CSS vars + utilidades de marca; el @tailwind base/components/
+ * utilities y el `body` los pone cada app.
+ */
+
+:root {
+  --background: 222 40% 99.5%;
+  --foreground: 222 45% 9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222 45% 9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 45% 9%;
+
+  --muted: 222 35% 96%;
+  --muted-foreground: 222 12% 42%;
+
+  --accent: 222 60% 96%;
+  --accent-foreground: 222 60% 30%;
+
+  /* azul de marca #2f6bff — idéntico en claro y oscuro (reconciliado) */
+  --primary: 222 100% 62%;
+  --primary-foreground: 0 0% 100%;
+
+  --destructive: 0 75% 52%;
+  --destructive-foreground: 0 0% 100%;
+
+  --success: 152 62% 40%;
+  --success-foreground: 0 0% 100%;
+
+  --border: 222 30% 90%;
+  --input: 222 30% 90%;
+  --ring: 222 100% 62%;
+
+  --radius: 0.5rem;
+
+  --brand: 222 100% 62%;
+  --brand-2: 201 100% 64%;
+
+  --grid-line: 222 90% 62%;
+  --grid-opacity: 0.07;
+
+  --sidebar-background: 222 35% 97%;
+  --sidebar-foreground: 222 30% 26%;
+  --sidebar-primary: 222 100% 62%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 222 55% 94%;
+  --sidebar-accent-foreground: 222 60% 30%;
+  --sidebar-border: 222 30% 90%;
+  --sidebar-ring: 222 100% 62%;
+}
+
+.dark {
+  --background: 222 52% 4%;
+  --foreground: 215 100% 96%;
+
+  --card: 222 38% 8%;
+  --card-foreground: 215 100% 96%;
+
+  --popover: 222 46% 6%;
+  --popover-foreground: 215 100% 96%;
+
+  --muted: 222 32% 12%;
+  --muted-foreground: 215 30% 68%;
+
+  --accent: 222 40% 14%;
+  --accent-foreground: 215 100% 96%;
+
+  --primary: 222 100% 62%;
+  --primary-foreground: 0 0% 100%;
+
+  --destructive: 0 62% 45%;
+  --destructive-foreground: 215 100% 96%;
+
+  --success: 152 60% 45%;
+  --success-foreground: 0 0% 100%;
+
+  --border: 222 35% 17%;
+  --input: 222 32% 15%;
+  --ring: 222 100% 62%;
+
+  --brand: 222 100% 62%;
+  --brand-2: 201 100% 64%;
+
+  --grid-line: 222 90% 62%;
+  --grid-opacity: 0.16;
+
+  --sidebar-background: 222 48% 5%;
+  --sidebar-foreground: 215 28% 90%;
+  --sidebar-primary: 222 100% 62%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 222 35% 12%;
+  --sidebar-accent-foreground: 215 100% 96%;
+  --sidebar-border: 222 32% 14%;
+  --sidebar-ring: 222 100% 62%;
+}
+
+/* ── Utilidades de marca (azul -> cyan) ── */
+.brand-gradient {
+  background-image: linear-gradient(110deg, hsl(var(--brand)), hsl(var(--brand-2)));
+}
+.text-brand-gradient {
+  background-image: linear-gradient(110deg, hsl(var(--brand)) 0%, hsl(280 90% 66%) 45%, hsl(var(--brand-2)) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.btn-glow {
+  box-shadow: 0 0 24px -8px hsl(var(--brand) / 0.9);
+}
+.btn-glow:hover {
+  box-shadow: 0 0 36px -6px hsl(var(--brand) / 1);
+}
+.bg-grid-brand {
+  background-image:
+    linear-gradient(to right, hsl(var(--grid-line) / var(--grid-opacity)) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--grid-line) / var(--grid-opacity)) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 80% 65% at 50% 0%, #000 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 65% at 50% 0%, #000 40%, transparent 100%);
+}
