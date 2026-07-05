@@ -1,10 +1,12 @@
 {
   "name": "@xonaplay/ui",
   "version": "0.1.0",
-  "description": "Sistema de diseño unificado de Xonaplay: tokens, preset de Tailwind y componentes compartidos por la web y el dashboard.",
+  "description": "Sistema de dise\u00f1o unificado de Xonaplay: tokens, preset de Tailwind y componentes compartidos por la web y el dashboard.",
   "type": "module",
   "license": "UNLICENSED",
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -34,7 +36,10 @@
     "@radix-ui/react-slot": "^1.1.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "tailwind-merge": "^2.6.0"
+    "tailwind-merge": "^2.6.0",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-tooltip": "^1.2.8"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",

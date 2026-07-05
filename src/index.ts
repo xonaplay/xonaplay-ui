@@ -18,3 +18,55 @@ export {
   type LanguageSwitcherProps,
   type LanguageOption,
 } from "./components/language-switcher"
+
+// ── Primitivas compartidas app + panel (fuente única: NO copiar en las apps) ──
+export {
+  Dialog,
+  DialogPortal,
+  DialogOverlay,
+  DialogTrigger,
+  DialogClose,
+  DialogContent,
+  DialogHeader,
+  DialogFooter,
+  DialogTitle,
+  DialogDescription,
+} from "./components/dialog"
+export {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuCheckboxItem,
+  DropdownMenuRadioItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuGroup,
+  DropdownMenuPortal,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuRadioGroup,
+} from "./components/dropdown-menu"
+export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "./components/tooltip"
+export { Skeleton } from "./components/skeleton"
+export { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from "./components/table"
+export { SidebarContext, useSidebar, type SidebarContextValue } from "./components/sidebar-context"
+export {
+  SidebarProvider,
+  Sidebar,
+  SidebarRail,
+  SidebarHeader,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+  SidebarInset,
+  SidebarTrigger,
+  SidebarMenuSub,
+  SidebarMenuSubItem,
+  SidebarMenuSubButton,
+} from "./components/sidebar"
