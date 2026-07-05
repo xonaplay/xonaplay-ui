@@ -70,3 +70,5 @@ export {
   SidebarMenuSubItem,
   SidebarMenuSubButton,
 } from "./components/sidebar"
+export { ShellHeader } from "./components/shell-header"
+export { ThemeMenu, type ThemeMenuValue, type ThemeMenuLabels } from "./components/theme-menu"
