@@ -73,3 +73,10 @@ export {
 export { ShellHeader } from "./components/shell-header"
 export { ThemeMenu, type ThemeMenuValue, type ThemeMenuLabels } from "./components/theme-menu"
 export { SidebarBrand } from "./components/sidebar-brand"
+export { Checkbox } from "./components/checkbox"
+export { PageHeader, type BreadcrumbItem } from "./components/page-header"
+export {
+  RolePermissionMatrix,
+  type PermMatrixItem,
+  type PermMatrixGroup,
+} from "./components/role-permission-matrix"
